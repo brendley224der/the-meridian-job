@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Meridian Job — a midnight bank heist</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0b0d12;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  #wrap { text-align: center; }
+  canvas {
+    display: block;
+    width: min(1280px, 100vw);
+    height: auto;
+    image-rendering: auto;
+    cursor: crosshair;
+    background: #10131a;
+  }
+  #hint {
+    color: #9aa3b2;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="hint">The Meridian Job — a top-down stealth heist. No network, no tracking, just the bank.</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
